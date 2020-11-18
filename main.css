@@ -1,0 +1,29 @@
+body {
+    font-family: 'Raleway', sans-serif;
+}
+
+#first {
+    display: grid;
+    width: 50%;
+    background-color:#F2F2f2;
+}
+
+#second {
+    display: grid;
+    width: 50%;
+    background-color:#F2F2f2;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 #2b2c2b;
+    transition: 0.3s;
+    display: flex;
+  }
+
+.container {
+    padding: 4px 20px;
+  }
+
+.fas, .far {
+    color: #0065FC;
+}
