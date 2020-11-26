@@ -11,17 +11,17 @@
     <title>Reservia</title>
 </head>
 <body>
-    <header id="header">
-        <nav id="navbar">
-            <div class="headerbuttons">
-                <button id="logo"><img src="images/logo/Reservia.svg" alt="Company Logo"></button>
-                <button id="signup"><b>Sign Up<b></button>
-            </div>
-            <div class="headerbuttons2">
-                <button class="underlined"><a href="#accomodations">Accomodations</a></button>
-                <button class="underlined"><a href="#activities">Activities</a></button>
-            </div>
-        </nav>
+    <div class="grid-container">
+        <div class="Navbar">
+            <img class="logo" src="images/logo/Reservia.svg" alt="logo">
+            <nav>
+                <ul class="nav_links">
+                    <li><a class="underline" href="#">Accomodations</a></li>
+                    <li><a class="underline" href="#">Activities</a></li>
+                    <li><a class="signup" href="#">Sign Up</a></li>   
+                </ul>
+            </nav>
+        </div>
         
         <div id="searchbar">
             <h2>Find a place for your dream vacation</h2>
@@ -40,9 +40,8 @@
             <button class="filtbtn"><i class="fas fa-dog"></i> Pets allowed</button>
             <p><i id="infoicon" class="fas fa-info-circle"></i>  More than 500 accomodations are available in this city</p>
         </div>    
-    </header>
 
-    <section id="first">
+    <!-- <section id="first">
         
         <div class="wrapper2">
             <div class="title">
@@ -202,19 +201,32 @@
         </div>
     </section>
 
-    <footer id="footer">
-        <h3><b>About</b></h3>
-        <p>Site Map</p>
-        <p>General Terms and Conditions</p>
-        <p>Data and privacy</p>
-        <br>
-        <h3><b>Our accomodations</b></h3>
-        <p>Quality Assesment</p>
-        <p>You have a Hotel?</p>
-        <br>
-        <h3><b>Assistance</b></h3>
-        <p>Help Desk</p>
-        <p>Contact Us</p>
+-->
+
+    <footer class="Footer">
+        <div>
+            <h3><b>About</b></h3>
+            <ul>
+                <li>Site Map</li>
+                <li>General Terms and Conditions</li>
+                <li>Data and Privacy</li>
+            </ul>
+        </div>
+        <div>
+            <h3><b>Our accomodations</b></h3>
+            <ul>
+                <li>Quality Assesment</li>
+                <li>You have a Hotel ?</li>
+            </ul>
+        </div>    
+        <div>
+            <h3><b>Assistance</b></h3>
+            <ul>
+                <li>Help Desk</li>
+                <li>Contact Us</li>
+            </ul>
+        </div>    
     </footer>
+    </div> 
 </body>
 </html>
