@@ -1,10 +1,6 @@
 * {
     padding: 1px;
-}
-    
-body {
     font-family: 'Raleway', sans-serif;
-    width: 100%;
 }
 
 @media (min-width: 360px) and (max-width: 600px){
@@ -281,7 +277,7 @@ footer ul {
     .grid-container {
         display: grid;
         grid-template-columns: 1.3fr 0.7fr;
-        grid-template-rows: 15vh 15vh 1fr 2.8fr 0.2fr 0.2fr;
+        grid-template-rows: 10vh 22vh 1fr 2.8fr 0.2fr 0.2fr;
         gap: 5px 0px;
         grid-template-areas:
           "Navbar Navbar"
@@ -303,14 +299,10 @@ footer ul {
           background-color: aliceblue;
       }
     
-      .Section2 {
-          font-size: xx-large;
-      }
-    
       /* Styling the navigation bar */
     
     li, a {
-        padding-top: 32px;
+        padding-top: 18px;
         text-decoration: none;
     }
     
@@ -344,9 +336,79 @@ footer ul {
     
     .signup {
         color: #0065FC;
+        font-weight: bold;
+    }
+
+    /* Styling the searchbar */
+
+    .Searchbar {
+        line-height: 70%;
+        padding: 10px 1%;
+    }
+
+    .Searchbar h2 {
+        font-size: 18px;
     }
     
-    /* Styling the searchbar */
+
+    .searchbar {
+        background-color: none;
+        border: 1px solid #f2f2f2;
+        width: 100%;
+        max-width: 480px;
+        width: 100%;
+        padding: 0;
+        display: flex;
+        justify-content: space-between;
+        border-radius: 5px;
+    }
+    
+    .searchbar .input {
+        border: none;
+        width: 85%;
+        padding: 10px 10px;
+        border-radius: 5px;
+        font-weight: bold;
+    }
+    
+    .searchbtn {
+        width: 10%;
+        border-radius: 5px;
+        position: relative;
+        cursor: pointer;
+    }
+    
+    .mapmarker {
+        width: 10%;
+        border-radius: 5px;
+        position: relative;
+        cursor: pointer;
+        background-color: #F2F2f2;
+    }
+    
+    .searchbtn .fas {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 18px;
+        color: none;
+    }
+    
+    .mapmarker .fas {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 18px;
+        color: #574d4d;
+    }
+
+    /* Styling the filter section */
+
+    
+    
+    /* Styling the footer */
 
     footer {
         display: flex;
@@ -354,6 +416,7 @@ footer ul {
         padding: 10px 1.5%;
         flex-wrap: nowrap;
         flex-direction: row;
+        margin: 0;
     }
 
     footer ul {
