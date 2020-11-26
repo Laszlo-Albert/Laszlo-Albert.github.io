@@ -277,8 +277,8 @@ footer ul {
     .grid-container {
         display: grid;
         grid-template-columns: 1.3fr 0.7fr;
-        grid-template-rows: 10vh 22vh 1fr 2.8fr 0.2fr 0.2fr;
-        gap: 5px 0px;
+        grid-template-rows: 10vh 22vh 26vh 2.8fr 0.2fr 0.2fr;
+        gap: 1px 0px;
         grid-template-areas:
           "Navbar Navbar"
           "Searchbar Searchbar"
@@ -311,6 +311,7 @@ footer ul {
         justify-content: space-between;
         align-items: center;
         padding: 10px 1%;
+        margin: 0;
     }
     
     .nav_links {
@@ -406,7 +407,28 @@ footer ul {
 
     /* Styling the filter section */
 
+    .Filters {
+        line-height: 60%;
+        padding: 10px 1%;
+    }
+
+    .filtbtn {
+        border: 1px solid #F2F2f2;
+        font-size: 14px;
+        padding-right: 10px;
+        cursor: pointer;
+        background-color: white;
+        border-radius: 35px;
+      }
     
+      .filtbtn i {
+        position: relative;
+        right: 2px;
+        border-radius: 20px;
+        color: #0065FC;
+        padding: 15px;
+        background-color: #DEEBFF;
+      }
     
     /* Styling the footer */
 
