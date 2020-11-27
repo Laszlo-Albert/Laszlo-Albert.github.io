@@ -275,6 +275,7 @@ footer ul {
 
     .grid-container {
         display: grid;
+        column-gap: 15px;
         grid-template-columns: 1.3fr 0.7fr;
         grid-template-rows: minmax(10vh, auto) minmax(25vh, auto) minmax(26vh, auto) minmax(50vh, auto) minmax(80vh, auto) minmax(10vh, auto);
         grid-template-areas:
@@ -443,7 +444,7 @@ footer ul {
         "p p p"; 
         padding: 10px 1%;
         background-color: #F2F2f2;
-        border-radius: 5px
+        border-radius: 15px;
 }
 
     .accomodations {grid-area: h3;}
@@ -514,6 +515,104 @@ footer ul {
         font-size: 12px;
     }
 
+    /* Styling Section 1 - Most Popular */
+
+    .Section1 {
+        display: grid;
+        background-color: #f2f2f2;
+        max-height: 600px;
+        grid-template-rows: 0.5fr 1fr 1fr 1fr;
+        grid-template-columns: repeat(5, 1fr);
+        grid-gap: 5px;
+        padding: 10px 3%;
+        border-radius: 15px;
+        grid-template-areas: 
+        "title title title title title"
+        "image image text text text"
+        "image1 image1 text1 text1 text1"
+        "image2 image2 text2 text2 text2"
+        
+    }
+
+    .Section1 h4 {
+        font-size: 14px;
+    }
+    
+    .text, .text1, .text2 {
+        padding-left: 5px;
+        margin: 0;
+        line-height: 80%;
+    }
+    
+    .title {
+        grid-area: title;
+    }
+    
+    .popular {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 1%;
+        margin: 0;
+    }
+
+    .popular li {
+        list-style: none;
+        display: inline-block;
+        padding: 0;
+    }
+    
+    .image {
+        grid-area: image;
+        background-image: url("images/hotels/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg");
+        object-fit:cover;
+        border-radius: 20px;
+    }
+    
+    .text {
+        grid-area: text;
+        border-radius: 20px;
+        align-content: center;
+        justify-content: center;
+        background-color: white;
+    }
+    
+    .image1 {
+        grid-area: image1;
+        background-image: url("images/hotels/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg");
+        object-fit:cover;
+        border-radius: 20px;
+    }
+    .text1 {
+        grid-area: text1;
+        border-radius: 20px;
+        background-color: white;
+    }
+    .image2 {
+        grid-area: image2;
+        background-image: url("images/hotels/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg");
+        object-fit: fill;
+        border-radius: 20px;
+    }
+    .text2 {
+        grid-area: text2;
+        border-radius: 20px;
+        background-color: white;
+    }
+    
+    img {
+        max-width: 50%;
+        max-height: 20%;
+    }
+    
+    .fas, .far {
+        color: #0065FC;
+    }
+
+    /* Styling Section3 - Activities */
+
+    
+
 
     /* Styling the footer */
 
@@ -529,5 +628,6 @@ footer ul {
     footer ul {
         line-height: 70%;
         list-style: none;
+        padding: 0;
     }
 }
