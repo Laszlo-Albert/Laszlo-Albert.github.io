@@ -2,7 +2,7 @@
     font-family: 'Raleway', sans-serif;
 }
 
-@media (min-width: 360px) and (max-width: 600px){
+@media (max-width: 600px){
 
 #signup {
         color: #0065FC;
@@ -271,7 +271,412 @@ footer ul {
 }
 }
 
-@media (min-width:900px){
+@media (min-width:601px) and (max-width:999px){
+
+    .grid-container {
+        display: grid;
+        column-gap: 15px;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: minmax(10vh, auto) minmax(25vh, auto) minmax(26vh, auto) minmax(50vh, auto) minmax(50vh, auto) minmax(80vh, auto) minmax(10vh, auto);
+        grid-template-areas:
+          "Navbar Navbar"
+          "Searchbar Searchbar"
+          "Filters Filters"
+          "Section1 Section1"
+          "Section2 Section2"
+          "Section3 Section3"
+          "Footer Footer";
+      }
+      .Navbar { grid-area: Navbar; }
+      .Searchbar { grid-area: Searchbar; }
+      .Filters { grid-area: Filters; }
+      .Footer { grid-area: Footer; }
+      .Section2 { grid-area: Section2; }
+      .Section1 { grid-area: Section1; }
+      .Section3 { grid-area: Section3; }
+    
+       .Section2, .Section1, .Footer {
+          background-color: #f2f2f2;
+      }
+    
+      /* Styling the navigation bar */
+    
+    li, a {
+        padding-top: 18px;
+        text-decoration: none;
+    }
+    
+    .Navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 1%;
+        margin: 0;
+    }
+    
+    .nav_links {
+        list-style: none;
+    }
+    
+    .nav_links li {
+        display: inline-block;
+        padding: 0px 20px;
+    }
+    
+    .nav_links li a {
+        transition: all 0.3s ease 0s;
+    }
+    
+    .nav_links li a:hover {
+        color: #0065FC;
+    }
+    
+    .underline:hover {
+        border-top: 1px solid #0065FC;
+    }
+    
+    .signup {
+        color: #0065FC;
+        font-weight: bold;
+    }
+
+    /* Styling the searchbar */
+
+    .Searchbar {
+        line-height: 70%;
+        padding: 10px 1%;
+    }
+
+    .Searchbar h2 {
+        font-size: 18px;
+    }
+    
+
+    .searchbar {
+        background-color: none;
+        border: 1px solid #f2f2f2;
+        width: 100%;
+        max-width: 480px;
+        width: 100%;
+        padding: 0;
+        display: flex;
+        justify-content: space-between;
+        border-radius: 5px;
+    }
+    
+    .searchbar .input {
+        border: none;
+        width: 85%;
+        padding: 10px 10px;
+        border-radius: 5px;
+        font-weight: bold;
+    }
+    
+    .searchbtn {
+        width: 10%;
+        border-radius: 5px;
+        position: relative;
+        cursor: pointer;
+    }
+    
+    .mapmarker {
+        width: 10%;
+        border-radius: 5px;
+        position: relative;
+        cursor: pointer;
+        background-color: #F2F2f2;
+    }
+    
+    .searchbtn .fas {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 18px;
+        color: none;
+    }
+    
+    .mapmarker .fas {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 18px;
+        color: #574d4d;
+    }
+
+    /* Styling the filter section */
+
+    .Filters {
+        line-height: 60%;
+        padding: 10px 1%;
+    }
+
+    .filtbtn {
+        border: 1px solid #F2F2f2;
+        font-size: 14px;
+        padding-right: 10px;
+        cursor: pointer;
+        background-color: white;
+        border-radius: 35px;
+      }
+    
+      .filtbtn i {
+        position: relative;
+        right: 2px;
+        border-radius: 20px;
+        color: #0065FC;
+        padding: 15px;
+        background-color: #DEEBFF;
+      }
+
+
+    /* Styling Section 2 - Accomodations */
+
+    .Section2 {
+        display: inline-grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: minmax(50px, auto) 1fr 1fr minmax(50px, auto);
+        grid-gap: 5px;
+        grid-template-areas:
+        "h3 h3 h3"
+        "card1 card2 card3"
+        "card4 card5 card6"
+        "p p p"; 
+        padding: 10px 1%;
+        background-color: #F2F2f2;
+        border-radius: 15px;
+    }
+
+    .accomodations {grid-area: h3;}
+    .card1 {grid-area:card1;}
+    .card2 {grid-area:card2;}
+    .card3 {grid-area:card3;}
+    .card4 {grid-area:card4;}
+    .card5 {grid-area:card5;}
+    .card6 {grid-area:card6;}
+    .para {grid-area:p;}
+
+    .container2 {
+        padding: 0;
+        line-height: 5px;
+    }
+
+    .card1, .card2, .card3, .card4, .card5, .card6 {
+        padding: 5px;
+        border-radius: 12px;
+        overflow: hidden;
+        background-color: white;
+    }
+
+    .card1 img {
+        max-width: 100%;
+        max-height: 20vh;
+    }
+
+    .card2 img {
+        max-width: 100%;
+        max-height: 20vh;
+    }
+
+    .card3 img {
+        max-width: 100%;
+        max-height: 20vh;
+    }
+
+    .card4 img {
+        max-width: 100%;
+        max-height: 20vh;
+    }
+
+    .card5 img {
+        max-width: 100%;
+        max-height: 20vh;
+    }
+
+    .card6 img {
+        max-width: 100%;
+        max-height: 20vh;
+    }
+
+    p ~ i {
+        color: #0065FC;
+        font-size: 12px;
+    }
+
+    .container2 h4 {
+        font-size: 12px;
+        margin: 5px auto;
+    }
+
+    h4 ~ p {
+        margin: 10px auto;
+        font-size: 12px;
+    }
+
+    /* Styling Section 1 - Most Popular */
+
+    .Section1 {
+        display: grid;
+        background-color: #f2f2f2;
+        max-height: 600px;
+        grid-template-rows: 0.5fr 1fr 1fr 1fr;
+        grid-template-columns: repeat(5, 1fr);
+        grid-gap: 5px;
+        padding: 10px 3%;
+        border-radius: 15px;
+        margin-bottom: 10px;
+        grid-template-areas: 
+        "title title title title title"
+        "image image text text text"
+        "image1 image1 text1 text1 text1"
+        "image2 image2 text2 text2 text2"
+    }
+
+    .Section1 h4 {
+        font-size: 14px;
+    }
+    
+    .text, .text1, .text2 {
+        padding-left: 5px;
+        margin: 0;
+        line-height: 80%;
+    }
+    
+    .title {
+        grid-area: title;
+    }
+    
+    .popular {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 1%;
+        margin: 0;
+    }
+
+    .popular li {
+        list-style: none;
+        display: inline-block;
+        padding: 0;
+    }
+    
+    .image {
+        grid-area: image;
+        background-image: url("images/hotels/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg");
+        object-fit:cover;
+        border-radius: 20px;
+    }
+    
+    .text {
+        grid-area: text;
+        border-radius: 20px;
+        align-content: center;
+        justify-content: center;
+        background-color: white;
+    }
+    
+    .image1 {
+        grid-area: image1;
+        background-image: url("images/hotels/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg");
+        object-fit:cover;
+        border-radius: 20px;
+    }
+    .text1 {
+        grid-area: text1;
+        border-radius: 20px;
+        background-color: white;
+    }
+    .image2 {
+        grid-area: image2;
+        background-image: url("images/hotels/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg");
+        object-fit: fill;
+        border-radius: 20px;
+    }
+    .text2 {
+        grid-area: text2;
+        border-radius: 20px;
+        background-color: white;
+    }
+    
+    img {
+        max-width: 50%;
+        max-height: 20%;
+    }
+    
+    .fas, .far {
+        color: #0065FC;
+    }
+
+    /* Styling Section3 - Activities */
+
+    .card7, .card8, .card9, .card10, .card11, .card12 img {
+        max-width: 100%;
+        max-height: 20vh;
+        object-fit: fill;
+    }
+
+    .Section3 {  
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: minmax(30px, auto) 1fr 1fr;
+        grid-gap: 30px;
+        grid-template-areas:
+        "activities activities activities"
+        "card7 card8 card9"
+        "card10 card11 card12";
+        padding: 10px 0 30px 0;
+        border-radius: 15px;
+    }
+
+    .activities {grid-area: activities;}
+    .card7 {grid-area:card7;}
+    .card8 {grid-area:card8;}
+    .card9 {grid-area:card9;}
+    .card10 {grid-area:card10;}
+    .card11 {grid-area:card11;}
+    .card12 {grid-area:card12;}
+    }
+
+    .activities h3 {
+        margin: 0;
+        padding-top: 20px;
+    }
+    
+    .card7, .card8, .card9, .card10, .card11, .card12 {
+        border-radius: 15px;
+        box-shadow: 0 3px 4px 0 #9a9c9a;
+        transition: 0.3s;
+        padding: 0;
+        margin: 0;
+        overflow: hidden;
+        min-height: auto;
+        max-height: 300px;
+    }
+
+    .container h4 {
+        font-size: 12px;
+        margin: 5px auto;
+    }
+
+    /* Styling the footer */
+
+    footer {
+        display: flex;
+        justify-content: space-between;
+        padding: 10px 1.5%;
+        flex-wrap: nowrap;
+        flex-direction: row;
+        margin: 0;
+    }
+
+    footer ul {
+        line-height: 70%;
+        list-style: none;
+        padding: 0;
+    }
+
+@media (min-width:1000px){
 
     .grid-container {
         display: grid;
@@ -286,6 +691,7 @@ footer ul {
           "Section3 Section3"
           "Footer Footer";
       }
+
       .Navbar { grid-area: Navbar; }
       .Searchbar { grid-area: Searchbar; }
       .Filters { grid-area: Filters; }
@@ -455,8 +861,6 @@ footer ul {
     .card5 {grid-area:card5;}
     .card6 {grid-area:card6;}
     .para {grid-area:p;}
-
-    
 
     .container2 {
         padding: 0;
@@ -628,7 +1032,7 @@ footer ul {
         "card7 card9 card10 card12";
         padding: 10px 0 30px 0;
         border-radius: 15px;
-}
+        }
 
     .activities {grid-area: activities;}
     .card7 {grid-area:card7;}
@@ -677,4 +1081,3 @@ footer ul {
         list-style: none;
         padding: 0;
     }
-}
