@@ -50,7 +50,7 @@
 /* Styling the searchbar */
 
 .searchbar {
-    background-color: none;
+    background-color: unset;
     border: 1px solid #f2f2f2;
     width: 100%;
     max-width: 480px;
@@ -90,7 +90,6 @@
     left: 50%;
     transform: translate(-50%, -50%);
     font-size: 18px;
-    color: none;
 }
 
 .mapmarker .fas {
@@ -368,7 +367,7 @@ img {
     
 
     .searchbar {
-        background-color: none;
+        background-color: nonset;
         border: 1px solid #f2f2f2;
         width: 100%;
         max-width: 480px;
@@ -408,7 +407,6 @@ img {
         left: 50%;
         transform: translate(-50%, -50%);
         font-size: 18px;
-        color: none;
     }
     
     .mapmarker .fas {
@@ -773,7 +771,7 @@ img {
     
 
     .searchbar {
-        background-color: none;
+        background-color: nonset;
         border: 1px solid #f2f2f2;
         width: 100%;
         max-width: 480px;
@@ -813,7 +811,6 @@ img {
         left: 50%;
         transform: translate(-50%, -50%);
         font-size: 18px;
-        color: none;
     }
     
     .mapmarker .fas {
