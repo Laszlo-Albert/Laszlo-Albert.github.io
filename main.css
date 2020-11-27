@@ -229,14 +229,14 @@ img {
 
 /* Styling the Third section (Activities in Marseille) */
 
-.card3, img {
+.card7, .card8, .card9, .card10, .card11, .card12 img {
     display: inline-block;
     max-width: 480px;
     width: 100%;
     margin: auto;
     object-fit: cover;
 }
-.wrapper {  
+.Section3 {  
     display: flex;
     flex-wrap: nowrap;
     height: 2700px;
@@ -247,7 +247,7 @@ img {
     order: 0;
 }
 
-.card3 {
+.card7, .card8, .card9, .card10, .card11, .card12 {
     position: relative;
     border-radius: 50px;
     box-shadow: 0 4px 8px 0 #9a9c9a;
@@ -294,8 +294,8 @@ footer ul {
       .Section1 { grid-area: Section1; }
       .Section3 { grid-area: Section3; }
     
-      .Navbar, .Searchbar, .Filters, .Section1, .Section3, .Footer {
-          background-color: aliceblue;
+       .Section2, .Section1, .Footer {
+          background-color: #f2f2f2;
       }
     
       /* Styling the navigation bar */
@@ -611,7 +611,54 @@ footer ul {
 
     /* Styling Section3 - Activities */
 
+    .card7, .card8, .card9, .card10, .card11, .card12 img {
+        max-width: 100%;
+        max-height: 20vh;
+        object-fit: fill;
+    }
+
+    .Section3 {  
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: minmax(30px, auto) 1fr 1fr;
+        grid-gap: 30px;
+        grid-template-areas:
+        "activities activities activities activities"
+        "card7 card8 card10 card11"
+        "card7 card9 card10 card12";
+        padding: 10px 0 30px 0;
+        border-radius: 15px;
+}
+
+    .activities {grid-area: activities;}
+    .card7 {grid-area:card7;}
+    .card8 {grid-area:card8;}
+    .card9 {grid-area:card9;}
+    .card10 {grid-area:card10;}
+    .card11 {grid-area:card11;}
+    .card12 {grid-area:card12;}
+    }
+
+    .activities h3 {
+        margin: 0;
+        padding-top: 20px;
+    }
     
+    .card7, .card8, .card9, .card10, .card11, .card12 {
+        border-radius: 15px;
+        box-shadow: 0 3px 4px 0 #9a9c9a;
+        transition: 0.3s;
+        padding: 0;
+        margin: 0;
+        overflow: hidden;
+        min-height: auto;
+        max-height: 300px;
+    }
+
+    .container h4 {
+        font-size: 12px;
+        margin: 5px auto;
+    }
 
 
     /* Styling the footer */
