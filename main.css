@@ -103,16 +103,21 @@
 
 /* Styling the filter buttons */
 
-.filtbtn {
+    .filtbtn {
     border: 1px solid #F2F2f2;
     font-size: 14px;
     padding-right: 10px;
     cursor: pointer;
     background-color: white;
     border-radius: 35px;
+    transition: background-color 1s ease;
   }
 
-  .filtbtn i {
+.filtbtn:hover {
+    background-color: #0065FC;
+}    
+
+.filtbtn i {
     position: relative;
     right: 2px;
     border-radius: 20px;
