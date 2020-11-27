@@ -437,7 +437,12 @@ img {
         cursor: pointer;
         background-color: white;
         border-radius: 35px;
-      }
+        transition: background-color 1s ease;
+  }
+
+    .filtbtn:hover {
+        background-color: #0065FC;
+    }          
     
       .filtbtn i {
         position: relative;
@@ -841,8 +846,13 @@ img {
         cursor: pointer;
         background-color: white;
         border-radius: 35px;
-      }
-    
+        transition: background-color 1s ease;
+    }
+
+    .filtbtn:hover {
+        background-color: #0065FC;
+    }    
+      
       .filtbtn i {
         position: relative;
         right: 2px;
