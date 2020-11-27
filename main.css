@@ -1,5 +1,4 @@
 * {
-    padding: 1px;
     font-family: 'Raleway', sans-serif;
 }
 
@@ -208,7 +207,7 @@ img {
 
 /* Styling the second section (Accomodations in Marseille) */
 
-#second {
+.Section2 {
     width: 100%;
     margin: 0;
     padding: 0;
@@ -226,7 +225,7 @@ img {
 
 .container {
     padding: 4px 20px;
-  } 
+  }
 
 /* Styling the Third section (Activities in Marseille) */
 
@@ -277,8 +276,7 @@ footer ul {
     .grid-container {
         display: grid;
         grid-template-columns: 1.3fr 0.7fr;
-        grid-template-rows: 10vh 22vh 26vh 2.8fr 0.2fr 0.2fr;
-        gap: 1px 0px;
+        grid-template-rows: minmax(10vh, auto) minmax(25vh, auto) minmax(26vh, auto) minmax(50vh, auto) minmax(80vh, auto) minmax(10vh, auto);
         grid-template-areas:
           "Navbar Navbar"
           "Searchbar Searchbar"
@@ -295,7 +293,7 @@ footer ul {
       .Section1 { grid-area: Section1; }
       .Section3 { grid-area: Section3; }
     
-      .Navbar, .Searchbar, .Filters, .Section1, .Section2, .Section3, .Footer {
+      .Navbar, .Searchbar, .Filters, .Section1, .Section3, .Footer {
           background-color: aliceblue;
       }
     
@@ -429,7 +427,94 @@ footer ul {
         padding: 15px;
         background-color: #DEEBFF;
       }
+
+
+    /* Styling Section 2 - Accomodations */
+
+    .Section2 {
+        display: inline-grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: minmax(50px, auto) 1fr 1fr minmax(50px, auto);
+        grid-gap: 5px;
+        grid-template-areas:
+        "h3 h3 h3"
+        "card1 card2 card3"
+        "card4 card5 card6"
+        "p p p"; 
+        padding: 10px 1%;
+        background-color: #F2F2f2;
+        border-radius: 5px
+}
+
+    .accomodations {grid-area: h3;}
+    .card1 {grid-area:card1;}
+    .card2 {grid-area:card2;}
+    .card3 {grid-area:card3;}
+    .card4 {grid-area:card4;}
+    .card5 {grid-area:card5;}
+    .card6 {grid-area:card6;}
+    .para {grid-area:p;}
+
     
+
+    .container2 {
+        padding: 0;
+        line-height: 5px;
+    }
+
+    .card1, .card2, .card3, .card4, .card5, .card6 {
+        padding: 5px;
+        border-radius: 12px;
+        overflow: hidden;
+        background-color: white;
+    }
+
+    .card1 img {
+        max-width: 100%;
+        max-height: 20vh;
+    }
+
+    .card2 img {
+        max-width: 100%;
+        max-height: 20vh;
+    }
+
+    .card3 img {
+        max-width: 100%;
+        max-height: 20vh;
+    }
+
+    .card4 img {
+        max-width: 100%;
+        max-height: 20vh;
+    }
+
+    .card5 img {
+        max-width: 100%;
+        max-height: 20vh;
+    }
+
+    .card6 img {
+        max-width: 100%;
+        max-height: 20vh;
+    }
+
+    p ~ i {
+        color: #0065FC;
+        font-size: 12px;
+    }
+
+    .container2 h4 {
+        font-size: 12px;
+        margin: 5px auto;
+    }
+
+    h4 ~ p {
+        margin: 10px auto;
+        font-size: 12px;
+    }
+
+
     /* Styling the footer */
 
     footer {
