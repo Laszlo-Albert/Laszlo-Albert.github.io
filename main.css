@@ -4,60 +4,48 @@
 
 @media (max-width: 600px){
 
-#signup {
-        color: #0065FC;
-        background: none;
-        border: 0;
-}
+    li, a {
+        padding-top: 18px;
+        text-decoration: none;
+    }
     
-#logo {
-        border: none;
-        background: none;
-}
+    .Navbar {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: minmax(5vh, auto) minmax(5vh, auto);
+        grid-template-areas:
+        "logo signup"
+        "link1 link2";
+        padding: 10px 1%;
+        margin: 0;
+    }
 
-header {
-    width: 100%;
-    margin: 0;
-    padding: 0;
-    top: 0;
-    left: 0;
-}
-
-.headerbuttons {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    flex-wrap: nowrap;
-    align-content: space-around;
-    justify-content: space-around;
-}
-
-.headerbuttons2 {
-    display: flex;
-    align-items: center;
-    flex-wrap: nowrap;
-    justify-content: space-between;
-    align-content: stretch;
-}
-
-.underlined {
-    width: 50%;
-    font-size: 20px;
-    background: none;
-    border: 0;
-    text-decoration: none;
-    padding-bottom: 5px;
-}
-
-.underlined:visited {
-    text-decoration: none;
-}
-
-.underlined:hover {
-    text-decoration: none;
-    color: #0065FC;
-    border-bottom: 2px solid #0065FC;
-}
+    .logo {grid-area: logo;}
+    .signup {grid-area: signup;}
+    .link1 {grid-area: link1;}
+    .link2 {grid-area: link2;}
+    
+    .nav_links {
+        list-style: none;
+        display: inline;
+    }
+    
+    .nav_links li a {
+        transition: all 0.3s ease 0s;
+    }
+    
+    .nav_links li a:hover {
+        color: #0065FC;
+    }
+    
+    .underline:hover {
+        border-top: 1px solid #0065FC;
+    }
+    
+    .signup {
+        color: #0065FC;
+        font-weight: bold;
+    }
 
 /* Styling the searchbar */
 
@@ -136,18 +124,40 @@ header {
 
 /* Styling the first section (Most Popular) */
 
-.wrapper2 {
+.Section1 {
     display: grid;
     background-color: #f2f2f2;
     max-height: 600px;
     grid-template-rows: 1fr 2fr 2fr 2fr;
     grid-template-columns: repeat(5, 1fr);
     grid-gap: 5px;
+    border-radius: 15px;
     grid-template-areas: 
-    "title title title icon icon"
+    "title title title title title"
     "image image text text text"
     "image1 image1 text1 text1 text1"
     "image2 image2 text2 text2 text2"
+}
+
+.popular {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 2%;
+    margin: 0;
+}
+
+.popular p {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+
+.text, .text1, .text2 {
+    padding-left: 15px;
+    align-content: center;
+    justify-content: center;
 }
 
 .title {
@@ -217,13 +227,16 @@ img {
     width: 100%;
 }
 
-.card  {
-    box-shadow: 0 4px 8px 0 #9a9c9a;
+.card1, .card2, .card3, .card4, .card5, .card6 {
+    border-radius: 15px;
+    box-shadow: 0 3px 4px 0 #9a9c9a;
     transition: 0.3s;
-    padding: 10px;
+    padding: 0;
+    margin: 10px;
+    overflow: hidden;
   }
 
-.container {
+.container2 {
     padding: 4px 20px;
   }
 
@@ -257,15 +270,17 @@ img {
     overflow: hidden;
 } 
 
-footer {
+.Footer {
+    display: flex;
+    flex-direction: column;
     background-color:#F2F2f2;
     width: 100%;
     padding: 5px 20px;
-    margin: 0;
+    margin-top: 25px;
     border: none;
 }
 
-footer ul {
+.Footer ul {
     line-height: 130%;
     list-style: none;
 }
